@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Pro</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <header>
+        <h1>Calculadora Speed</h1>
+    </header>
+    
+    <section>
+        <div id="visor">
+            <input type="text" name="cnum" id="cnum" placeholder="Digite um número:">
+        </div>
+
+        <div id="teclado">
+            <button type="button" onclick="adNum('7')">7</button>
+            <button type="button" onclick="adNum('8')">8</button>
+            <button type="button" onclick="adNum('9')">9</button>
+            <button type="button" onclick="selecionarOperacao('/')">÷</button>
+
+            <button type="button" onclick="adNum('4')">4</button>
+            <button type="button" onclick="adNum('5')">5</button>
+            <button type="button" onclick="adNum('6')">6</button>
+            <button type="button" onclick="selecionarOperacao('*')">x</button>
+
+            <button type="button" onclick="adNum('1')">1</button>
+            <button type="button" onclick="adNum('2')">2</button>
+            <button type="button" onclick="adNum('3')">3</button>
+            <button type="button" onclick="selecionarOperacao('-')">-</button>
+
+            <button type="button" onclick="limpar()">C</button>
+            <button type="button" onclick="adNum('0')">0</button>
+            <button type="button" onclick="calcular()">=</button>
+            <button type="button" onclick="selecionarOperacao('+')">+</button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
